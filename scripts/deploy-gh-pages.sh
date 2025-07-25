@@ -49,7 +49,7 @@ git commit -m "Deploy to GitHub Pages"
 echo "🚀 推送到 gh-pages 分支..."
 echo "🚀 Pushing to gh-pages branch..."
 git branch -M gh-pages
-git remote add origin git@github.com:niuyp/DrivingKnowledgeTest.git
+git remote add origin git@github.com:DISSIDIA-986/DrivingKnowledgeTest.git
 git push -f origin gh-pages
 
 # 返回项目根目录
@@ -64,4 +64,4 @@ echo "✅ 部署完成!"
 echo "✅ Deployment completed!"
 echo "🌐 网站将在几分钟内在以下地址可用:"
 echo "🌐 Your site will be available at:"
-echo "   https://niuyp.github.io/DrivingKnowledgeTest/" 
+echo "   https://DISSIDIA-986.github.io/DrivingKnowledgeTest/" 
