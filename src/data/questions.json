@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "question": "当您看到这个停车标志时，您应该：",
+    "options": ["A. 完全停车", "B. 减速慢行", "C. 仅在有其他车辆时停车", "D. 无需操作"],
+    "correctAnswer": "A",
+    "explanation": "停车标志要求所有车辆必须完全停车，即使路口没有其他车辆也必须停车。",
+    "imageUrl": "https://example.com/stop-sign.jpg",
+    "category": "交通标志"
+  },
+  {
+    "id": 2,
+    "question": "在Alberta，血液酒精浓度（BAC）的法定限制是多少？",
+    "options": ["A. 0.05%", "B. 0.08%", "C. 0.10%", "D. 0.12%"],
+    "correctAnswer": "B",
+    "explanation": "在Alberta，驾驶员的血液酒精浓度不得超过0.08%。超过此限制属于刑事犯罪。",
+    "category": "法律法规"
+  },
+  {
+    "id": 3,
+    "question": "在学校区域的速度限制通常是：",
+    "options": ["A. 30 km/h", "B. 40 km/h", "C. 50 km/h", "D. 60 km/h"],
+    "correctAnswer": "A",
+    "explanation": "在学校区域，特别是在上学和放学时间，速度限制通常为30 km/h，以确保儿童安全。",
+    "category": "速度限制"
+  },
+  {
+    "id": 4,
+    "question": "右转弯时，您应该：",
+    "options": ["A. 转向右侧车道", "B. 转向左侧车道", "C. 转向任何可用车道", "D. 停在十字路口中间"],
+    "correctAnswer": "A",
+    "explanation": "右转弯时应该转向最右侧的车道，这是交通规则的基本要求。",
+    "category": "转弯规则"
+  },
+  {
+    "id": 5,
+    "question": "当您遇到行人过街时，您应该：",
+    "options": ["A. 鸣笛提醒", "B. 加速通过", "C. 停车让行", "D. 减速但继续行驶"],
+    "correctAnswer": "C",
+    "explanation": "遇到行人过街时，驾驶员必须停车让行，确保行人安全通过。",
+    "category": "行人权利"
+  },
+  {
+    "id": 6,
+    "question": "在高速公路上，最低速度限制通常是：",
+    "options": ["A. 50 km/h", "B. 60 km/h", "C. 70 km/h", "D. 80 km/h"],
+    "correctAnswer": "B",
+    "explanation": "在Alberta的高速公路上，最低速度限制通常为60 km/h，以确保交通流畅。",
+    "category": "速度限制"
+  },
+  {
+    "id": 7,
+    "question": "当您看到黄灯时，您应该：",
+    "options": ["A. 加速通过", "B. 立即停车", "C. 准备停车", "D. 继续正常行驶"],
+    "correctAnswer": "C",
+    "explanation": "黄灯表示信号即将变红，驾驶员应该准备停车，除非已经太接近无法安全停车。",
+    "category": "交通信号"
+  },
+  {
+    "id": 8,
+    "question": "在Alberta，新驾驶员必须持有学习驾照多长时间？",
+    "options": ["A. 3个月", "B. 6个月", "C. 1年", "D. 2年"],
+    "correctAnswer": "C",
+    "explanation": "在Alberta，新驾驶员必须持有学习驾照至少1年才能申请road test。",
+    "category": "驾照规定"
+  },
+  {
+    "id": 9,
+    "question": "超车时，您应该：",
+    "options": ["A. 从右侧超车", "B. 从左侧超车", "C. 从任何一侧超车", "D. 不允许超车"],
+    "correctAnswer": "B",
+    "explanation": "在Alberta，超车必须从左侧进行，从右侧超车是违法的。",
+    "category": "超车规则"
+  },
+  {
+    "id": 10,
+    "question": "当您听到紧急车辆的警报声时，您应该：",
+    "options": ["A. 加速离开", "B. 立即停车", "C. 靠右停车让行", "D. 继续正常行驶"],
+    "correctAnswer": "C",
+    "explanation": "听到紧急车辆警报声时，应该安全地靠右侧停车让行，为紧急车辆让出通道。",
+    "category": "紧急情况"
+  }
+]

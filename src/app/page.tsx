@@ -1,103 +1,84 @@
-import Image from "next/image";
+'use client'
+
+import Link from 'next/link'
+import { BookOpenIcon, PlayIcon, AcademicCapIcon } from '@heroicons/react/24/outline'
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col items-center justify-center">
+      {/* Hero Section */}
+      <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 text-center max-w-2xl mb-8">
+        <div className="flex justify-center mb-6">
+          <div className="bg-blue-100 p-4 rounded-full">
+            <AcademicCapIcon className="h-12 w-12 text-blue-600" />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        
+        <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          高效、简洁、专为华人设计
+        </h2>
+        
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          Alberta 驾驶知识考试实际只有 30 题，难度远低于中国驾考。
+          我们精选高频考题，帮助您快速掌握重点，节省学习时间。
+        </p>
+        
+        <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+          <p className="text-green-800 text-sm">
+            💡 <strong>学习建议：</strong>考试比您想象的简单，只需多练习高频题目即可！
+          </p>
+        </div>
+        
+        <Link 
+          href="/quiz"
+          className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg transition-colors duration-200 text-lg"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          <PlayIcon className="h-5 w-5" />
+          开始考试
+        </Link>
+      </div>
+      
+      {/* Features Section */}
+      <div className="grid md:grid-cols-3 gap-6 w-full max-w-4xl">
+        <div className="bg-white rounded-lg shadow p-6 text-center">
+          <div className="bg-purple-100 p-3 rounded-full inline-block mb-4">
+            <BookOpenIcon className="h-8 w-8 text-purple-600" />
+          </div>
+          <h3 className="font-semibold text-gray-800 mb-2">精选题库</h3>
+          <p className="text-gray-600 text-sm">
+            基于真实考试题目，筛选高频考点，提高学习效率
+          </p>
+        </div>
+        
+        <div className="bg-white rounded-lg shadow p-6 text-center">
+          <div className="bg-green-100 p-3 rounded-full inline-block mb-4">
+            <div className="h-8 w-8 flex items-center justify-center text-green-600 font-bold text-lg">
+              30
+            </div>
+          </div>
+          <h3 className="font-semibold text-gray-800 mb-2">真实体验</h3>
+          <p className="text-gray-600 text-sm">
+            模拟真实考试，30题随机抽取，完全还原考试流程
+          </p>
+        </div>
+        
+        <div className="bg-white rounded-lg shadow p-6 text-center">
+          <div className="bg-blue-100 p-3 rounded-full inline-block mb-4">
+            <div className="h-8 w-8 flex items-center justify-center text-blue-600 font-bold">
+              中
+            </div>
+          </div>
+          <h3 className="font-semibold text-gray-800 mb-2">中文界面</h3>
+          <p className="text-gray-600 text-sm">
+            简洁的中文界面，清晰的答案解析，降低语言障碍
+          </p>
+        </div>
+      </div>
+      
+      {/* Footer */}
+      <footer className="mt-12 text-center text-gray-500 text-sm">
+        <p>祝您考试顺利，早日拿到驾照！🚗</p>
       </footer>
     </div>
-  );
+  )
 }
